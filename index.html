@@ -24,8 +24,36 @@
                     <a href=""class="hover:text-blue-400">Contact</a>
                 </div>
                 <a href="" class="hidden md:block text-white bg-blue-900 p-3 rounded-full hover:p-4 transition-all">Get Started</a>
-           
+           <!--menu icons for mobile start-->
+<!-- default icon-->
+<div id="default_menu_icon" class="md:hidden p-3 cursor-pointer" onclick="menuList()">
+    <svg   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </div>
+      <!-- close icon-->
+    <div id="close_menu_icon" class="hidden cursor-pointer p-3" ondblclick="closeMenu()">
+      <svg   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </div>
+   
+    <!-- menu icons for mobile end-->
         </div>
+
+<!-- mobile menu list start-->
+        <div  id="MenuListForMobile"  class="hidden pt-4  transition-all du ease-in-out">
+            <div class="flex flex-col items-center space-y-3 bg-blue-200 p-3 rounded-3xl">
+                 <a href="" class="hover:text-blue-400">Home</a>
+                    <a href="" class="hover:text-blue-400">About</a>
+                    <a href=""class="hover:text-blue-400">Trainers</a>
+                    <a href=""class="hover:text-blue-400">Classes</a>
+                    <a href=""class="hover:text-blue-400">Schedule</a>
+                    <a href=""class="hover:text-blue-400">News</a>
+                    <a href=""class="hover:text-blue-400">Contact</a>
+            </div>
+        </div>
+<!-- mobile menu list end-->
     </nav>
     <!--Nav bar End-->  
 
@@ -126,8 +154,8 @@
 <!-- footer theame started-->
 
 <section id="footer_theame">
-    <div class="flex bg-blue-700 mt-5 p-8 " >
-        <div class="w-2/3 my-auto">
+    <div class="flex flex-col md:flex-row bg-blue-700 mt-5 p-8 " >
+        <div class="md:w-2/3 my-auto">
             <h1 class="text-white font-bold text-2xl text-center">Simplify how your team works today.</h1>
         </div>
 
@@ -173,4 +201,5 @@
         </div>
     </section>
 <!-- Main footer end-->
+<script src="menuDisplay.js"></script>
 </body>
